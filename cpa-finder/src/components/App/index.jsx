@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react'
 import './styles.css'
+import Card from '../Card'
+import Gallery from '../Gallery'
+
+
 
 export default function App() {
   // Store API data here
@@ -20,19 +24,13 @@ export default function App() {
   }, [])
 console.log(cpas)
 
-  if (cpas.length > 0) {
   return (
     <>
-    <h1>CPA Finder</h1>
-    <p>{cpas[1].properties.name}</p>
+    <h1 className="text-6xl text-center">CPA Finder</h1>
+    <div className="w-4/5 mt-10 mx-auto xl:columns-4 lg:columns-3 md:columns-2">
+    {cpas.length > 0 ? cpas.map(cpa => <Card key={cpa.properties.name} cpa={cpa} />) : <p>CPAs are loading...</p>}
+    </div>
+    
     </>
   )
-  } else {
-  return (
-  <>
-    <h1>CPA Finder</h1>
-    <p>CPAs are loading...</p>
-  </>
-)
-}
 }
