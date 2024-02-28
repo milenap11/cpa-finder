@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import CommentSection from '../CommentSection'
+
 
 export default function DetailsPage() {
     const [cpa, setCpa] = useState(null)
@@ -19,8 +21,10 @@ useEffect(() => {
 }, [id])
 
 // console.log(cpa)
+
 if (cpa) {
     return (
+        <>
         <div className="w-4/5 mx-auto min-h-[300px] border-2 border-black rounded-lg">
             <h1>{cpa.properties.name}</h1>
             <p>{cpa.properties.address_line2}</p>
@@ -28,6 +32,8 @@ if (cpa) {
             <br />
             <p>{cpa.properties.opening_hours}</p>
         </div>
+        <CommentSection cpaId={cpa.properties.name} />
+        </>
     )
 } else {
     return (
