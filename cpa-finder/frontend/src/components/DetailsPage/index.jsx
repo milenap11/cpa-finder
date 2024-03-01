@@ -11,7 +11,7 @@ useEffect(() => {
     // Query the API if a Card component was not clicked on
     
         async function getCpaFromAPI() {
-            const res = await fetch(`https://api.geoapify.com/v2/places?api_key=${import.meta.env.VITE_CPA_KEY}&categories=office.accountant&filter=place:516233e79eb51d54c0591a95fdf9b68e3940f00101f9014479120000000000c002099203114d69616d692d4461646520436f756e7479&codes=${id}`)
+            const res = await fetch(`https://api.geoapify.com/v2/places?api_key=${import.meta.env.VITE_CPA_KEY}&categories=office.accountant&filter=place:${id}`)
             const data  = await res.json() // destructure the JSON response
             // console.log(data)
             setCpa(data.features[0])

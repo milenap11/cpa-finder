@@ -16,7 +16,8 @@ export default function App() {
   async function getData(url) {
     const res = await fetch(url);
     const data = await res.json();
-    setCpas(data.features);
+    setCpas([])
+    setCpas(cpas => cpas.concat(data.features))
   }
 
   useEffect(() => {
@@ -24,12 +25,12 @@ export default function App() {
     getData(
       `https://api.geoapify.com/v2/places?api_key=${
         import.meta.env.VITE_CPA_KEY
-      }&categories=office.accountant&filter=place:516233e79eb51d54c0591a95fdf9b68e3940f00101f9014479120000000000c002099203114d69616d692d4461646520436f756e7479`
+      }&categories=office.accountant&filter=place:51d9d1938d628052c0595938a4ac3a5b4440f00101f90121af020000000000c00208`
     );
   }, []);
 
   // console.log(cpas)
-
+  
   return (
     <>
       <nav className="flex items-center justify-between h-16 bg-gray-800 shadow-lg lg:px-9 md:px-6 px-3">

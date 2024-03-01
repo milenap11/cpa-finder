@@ -1,11 +1,11 @@
 import Card from "../Card"
 
-export default function Gallery({ cpas, refreshQueue, updateDetails }) {
+export default function Gallery({ cpas, updateDetails }) {
     
     // console.log(cpas, "Gallery")
     
         const galleryContent = cpas
-        .map(cpa => (<Card key={cpa.properties.name} cpa={cpa} updateDetails={updateDetails} />))   
+        .map(cpa => (<Card key={cpa.properties.place_id} cpa={cpa} updateDetails={updateDetails} />))   
         
     // console.log(galleryContent, "Gallery Content")
      
