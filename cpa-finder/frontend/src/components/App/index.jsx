@@ -6,11 +6,14 @@ import Gallery from "../Gallery";
 import DetailsPage from "../DetailsPage";
 import NotFoundPage from "../NotFoundPage";
 import HomePage from "../HomePage";
+import AuthFormPage from '../AuthFormPage'
+
 
 export default function App() {
   // Store API data here
   const [cpas, setCpas] = useState([]);
   const [detailsData, setDetailsData] = useState({});
+  const [loginStatus, setLoginStatus] = useState(false)
 
   // Define an async function to JSONify the query response
   async function getData(url) {
@@ -27,10 +30,32 @@ export default function App() {
         import.meta.env.VITE_CPA_KEY
       }&categories=office.accountant&filter=place:51d9d1938d628052c0595938a4ac3a5b4440f00101f90121af020000000000c00208`
     );
+    if (localStorage.getItem('userToken')) {
+      setLoginStatus(true)
+    }
   }, []);
 
   // console.log(cpas)
   
+  let authLink = <div className="flex lg:gap-5 md:gap-4 sm:gap-3 gap-2">
+    <Link to="/auth/signup">
+      <h2 className="text-white md:text-lg sm:text-md">Sign Up</h2>
+    </Link>
+    <Link to="/auth/login">
+      <h2 className="text-white md:text-lg sm:text-md">Log In</h2>
+    </Link>
+  </div>
+
+  if (loginStatus) {
+        authLink = <button className="text-white md:text-lg sm:text-md" 
+        onClick={() => {
+          localStorage.clear() 
+          setLoginStatus(false)
+        }}>
+        Log Out
+    </button>
+  }
+
   return (
     <>
       <nav className="flex items-center justify-between h-16 bg-gray-800 shadow-lg lg:px-9 md:px-6 px-3">
@@ -39,9 +64,7 @@ export default function App() {
             CPA Finder
           </h1>
         </Link>
-        <Link to="/about">
-          <h2 className="text-white md:text-lg sm:text-md">About Us</h2>
-        </Link>
+        {authLink}
       </nav>
 
       <Routes>
@@ -61,6 +84,7 @@ export default function App() {
           element={<DetailsPage cpa={detailsData} />}
         />
         <Route path="/*" element={<NotFoundPage />} />
+        <Route path="/auth/:formType" element={<AuthFormPage setLoginStatus={setLoginStatus} />} />
       </Routes>
     </>
   );

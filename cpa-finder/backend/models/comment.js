@@ -7,7 +7,13 @@ const commentSchema = new mongoose.Schema(
         name: { type: String, required: true },
         content: { type: String, required: true },
         title: { type: String, maxLength: 30 },
+        userId: { 
+            type: mongoose.Schema.Types.ObjectId,
+            required: true,
+            ref: 'User',
+        },
         cpaId: { type: String, required: true }
+            
     },
     { timestamps: true }
 );
