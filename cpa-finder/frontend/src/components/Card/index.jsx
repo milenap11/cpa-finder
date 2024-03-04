@@ -3,6 +3,7 @@ import './styles.css'
 
 export default function Card({ cpa, updateDetails }) {
     // console.log(cpa.properties.name)
+    
     return (
         <figure className="relative mb-4 break-inside-avoid-column rounded-md bg-[white] border border-gray-300 hover:shadow-md transition-shadow duration-300 ease-in-out cursor-pointer">
             <Link to={"/details/" + cpa.properties.place_id} onClick={() => updateDetails(cpa)}>
@@ -12,6 +13,7 @@ export default function Card({ cpa, updateDetails }) {
                 <p>{cpa.properties.state} </p>
                 <br />
                 <p>{cpa.properties.opening_hours}</p>
+               
             </figcaption>
             </Link>
         </figure>

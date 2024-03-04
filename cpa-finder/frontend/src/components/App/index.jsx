@@ -39,15 +39,16 @@ export default function App() {
   
   let authLink = <div className="flex lg:gap-5 md:gap-4 sm:gap-3 gap-2">
     <Link to="/auth/signup">
-      <h2 className="text-white md:text-lg sm:text-md">Sign Up</h2>
+      <h2 className="md:text-lg sm:text-md font-semibold">Sign Up</h2>
     </Link>
+    <p>|</p>
     <Link to="/auth/login">
-      <h2 className="text-white md:text-lg sm:text-md">Log In</h2>
+      <h2 className="md:text-lg sm:text-md font-semibold">Log In</h2>
     </Link>
   </div>
 
   if (loginStatus) {
-        authLink = <button className="text-white md:text-lg sm:text-md" 
+        authLink = <button className="md:text-lg sm:text-md" 
         onClick={() => {
           localStorage.clear() 
           setLoginStatus(false)
@@ -58,9 +59,9 @@ export default function App() {
 
   return (
     <>
-      <nav className="flex items-center justify-between h-16 bg-gray-800 shadow-lg lg:px-9 md:px-6 px-3">
+      <nav className="bg-[#d6e5f3] mx-[10%] flex items-center justify-between h-16">
         <Link to="/">
-          <h1 className="text-white font-bold md:text-3xl sm:text-2xl">
+          <h1 className="font-bold md:text-3xl sm:text-2xl">
             CPA Finder
           </h1>
         </Link>

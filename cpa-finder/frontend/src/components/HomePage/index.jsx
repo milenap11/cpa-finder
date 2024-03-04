@@ -33,15 +33,16 @@ export default function HomePage({ cpas, refreshQueue, updateDetails }) {
     if (cpas.length > 0) {
     return (
         <>
-            <h1 className="mt-5 text-center md:text-3xl text-2xl font-bold">Welcome</h1>
-            <h2 className="text-center md:text-xl text-lg font-semibold italic">Find, compare and book with highly-rated CPAs</h2>
+        <div className="bg-[#d6e5f3] mt-24">
+            <h1 className="text-center md:text-4xl text-3xl">Find a CPA near you</h1>
+            <h1 className="text-center md:text-lg sm:text-md mt-4 font-light">Find, compare and book with highly-rated CPAs</h1>
             <br />
-            <h3 className="text-center text-lg font-bold">Browse CPAs below!</h3>
+            {/* <h3 className="text-center text-lg font-bold">Browse CPAs below!</h3> */}
 
 
-            <div className="pb-10">
+            <div>
     <form onSubmit={handleSubmit} className="mt-4 text-center">
-        <input
+            <input
             className="box-border p-2 w-3/5 rounded-md border border-gray-300 focus:outline-none focus:border-gray-500"
             name="postcode"
             placeholder="zipcode: 11201" 
@@ -56,23 +57,25 @@ export default function HomePage({ cpas, refreshQueue, updateDetails }) {
             Search
         </button>
     </form>
+            <p className="mt-20 mb-4 mx-[10%]">{cpas.length} results</p>
             </div>
-
+        </div>
+        <div className="bg-[#ffffff]">
             <Gallery 
             cpas={cpas}
             refreshQueue={refreshQueue}
             updateDetails={updateDetails}
             />
+        </div>
         </>
     )
 
     } else {
         return (
         <>
-            <h1 className="mt-5 text-center md:text-3xl text-2xl font-bold">Welcome</h1>
-            <h2 className="text-center md:text-xl text-lg font-semibold italic">Find, compare and book with highly-rated CPAs</h2>
+            <h1 className="mt-5 text-center md:text-3xl text-2xl font-bold">Find a CPAs near you</h1>
+            <h2 className="text-center md:text-xl text-lg mt-4">Find, compare and book with highly-rated CPAs</h2>
             <br />
-            <h3 className="text-center text-lg font-bold">Browse CPAs below!</h3>
 
 
             <div className="pb-10">

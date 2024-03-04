@@ -5,7 +5,11 @@ export default {
     "./frontend/src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: ['Montserrat']
+      }
+    },
   },
   plugins: [],
 }
