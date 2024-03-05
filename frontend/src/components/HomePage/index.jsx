@@ -33,7 +33,7 @@ export default function HomePage({ cpas, refreshQueue, updateDetails }) {
     if (cpas.length > 0) {
     return (
         <>
-        <div className="bg-[#d6e5f3] my-24">
+        <div className="my-24">
             <h1 className="text-center md:text-4xl text-3xl font-medium">Find a CPA near you</h1>
             <h1 className="text-center md:text-lg sm:text-md mt-2 font-normal">Find, compare and book with highly-rated CPAs</h1>
             <div>
@@ -55,7 +55,7 @@ export default function HomePage({ cpas, refreshQueue, updateDetails }) {
     </form>
             </div>
         </div>
-        <div className="bg-[#ffffff]">
+        <div className="min-h-[600px] bg-[#ffffff]">
         <p className="font-light pt-4 mx-[10%]">{cpas.length} results</p>
             <Gallery 
             cpas={cpas}
@@ -69,7 +69,7 @@ export default function HomePage({ cpas, refreshQueue, updateDetails }) {
     } else {
         return (
         <>
-            <div className="bg-[#d6e5f3] my-24">
+            <div className="my-24">
             <h1 className="text-center md:text-4xl text-3xl font-medium">Find a CPA near you</h1>
             <h1 className="text-center md:text-lg sm:text-md mt-2 font-normal">Find, compare and book with highly-rated CPAs</h1>
             <div>
@@ -91,7 +91,7 @@ export default function HomePage({ cpas, refreshQueue, updateDetails }) {
     </form>
             </div>
         </div>
-        <div className="min-h-[500px] bg-[#ffffff]">
+        <div className="min-h-[600px] bg-[#ffffff]">
         <p className="font-light pt-4 mx-[10%]">{cpas.length} results</p>
         </div>
         </>

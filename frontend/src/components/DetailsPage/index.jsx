@@ -28,16 +28,19 @@ useEffect(() => {
 if (cpa) {
     return (
         <>
-        <div className=" bg-[#fdfaee] rounded-md mx-[10%] mt-12 px-4 py-8">
+        <div className="bg-[#fdfaee] min-h-[1000px] py-16">
+        <div className="rounded-md mx-[10%]">
+            
             <h1 className="text-2xl font-medium" >{cpa.properties.name}</h1>
-            <img src={locationIcon} />
-            <p className="mt-2 font-light">{cpa.properties.address_line2}</p>
-            <img src={phoneIcon} />
-            <p className="mt-2 font-light">{cpa.properties.datasource.raw.phone}</p>
-            <img src={clockIcon} />
-            <p className="mt-2 font-light">{cpa.properties.opening_hours}</p>
+            <div className="flex lg:gap-5 md:gap-4 sm:gap-3 gap-2 mt-4"><img src={locationIcon} />
+            <p className="font-normal">{cpa.properties.address_line2}</p></div>
+            <div className="flex lg:gap-5 md:gap-4 sm:gap-3 gap-2 mt-4"><img src={phoneIcon} />
+            <p className="font-normal">{cpa.properties.datasource.raw.phone}</p></div>
+            <div className="flex lg:gap-5 md:gap-4 sm:gap-3 gap-2 mt-4"><img src={clockIcon} />
+            <p className="font-normal">{cpa.properties.opening_hours}</p></div>
         </div>
         <CommentSection cpaId={cpa.properties.name} />
+        </div>
         </>
     )
 } else {

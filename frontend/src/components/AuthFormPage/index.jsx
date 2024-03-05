@@ -43,7 +43,7 @@ export default function AuthFormPage({ setLoginStatus }) {
 
     return (
         <div className="flex items-center justify-center h-[90vh]">
-            <div className="bg-gray-800 rounded-lg shadow-xl p-8 w-full max-w-md">
+            <div className="bg-[#4D4D4D] rounded-lg shadow-xl p-8 w-full max-w-md">
                 <h2 className="text-3xl text-center font-bold text-gray-100 mb-8">{actionText}</h2>
                 <form className="space-y-6" onSubmit={handleSubmit}>
                     <div>
@@ -80,7 +80,7 @@ export default function AuthFormPage({ setLoginStatus }) {
                     <div>
                         <button
                             type="submit"
-                            className="w-full py-2 px-4 bg-green-700 text-gray-100 rounded-md hover:bg-green-800 transition duration-300">
+                            className="w-full py-2 px-4 bg-[#fff04b] rounded-md hover:bg-[#F2E447] transition duration-200 font-medium">
                             {actionText}
                         </button>
                     </div>

@@ -55,7 +55,7 @@ export default function commentSection({ cpaId }) {
 
 
     // conditionally render comments
-    let commentElements = [<p key='0' className='text-center'>No comments yet. Be the first to comment!</p>]
+    let commentElements = [<p key='0' className='text-center font-light'>No comments yet. Be the first to comment!</p>]
     if (comments.length > 0) {
         commentElements = comments.map(comment => {
             return <Comment
@@ -73,11 +73,11 @@ export default function commentSection({ cpaId }) {
     }
 
     return (
-        <div className='comment-section mx-[10%] mt-12 relative '>
-            <h1 className='text-xl font-semibold'>Leave a Review</h1>
+        <div className='comment-section mx-[10%] mt-16 relative '>
+            <h1 className='text-xl font-medium'>Customer reviews</h1>
             <button
                 onClick={toggleCreateForm}
-                className="top-0 right-0 absolute text-white hover:bg-green-800 font-bold py-2 px-4 bg-green-900 rounded cursor-pointer"
+                className="top-0 right-0 absolute text-white hover:bg-[#307DE8] font-bold py-2 px-4 bg-[#4e93f3] rounded cursor-pointer"
             >
                 {btnText}
             </button>
@@ -86,7 +86,7 @@ export default function commentSection({ cpaId }) {
             {
                 showCreateForm && <form
                     onSubmit={handleSubmit}
-                    className="bg-gray-100 rounded-md p-4 my-4 border border-gray-300 w-[80vw] mx-auto text-right">
+                    className="bg-gray-100 rounded-md p-4 my-4 border w-[80vw] mx-auto text-right">
                     <input
                         name="name"
                         className="px-2 py-1 w-full bg-gray-100"
@@ -104,7 +104,7 @@ export default function commentSection({ cpaId }) {
                     />
                     <button
                         type="submit"
-                        className="text-white hover:bg-gray-800 font-bold py-2 px-4 bg-gray-700 rounded cursor-pointer mr-2">
+                        className="text-white hover:bg-gray-700 font-bold py-2 px-4 bg-gray-600 rounded cursor-pointer mr-2">
                         Submit
                     </button>
                 </form>
