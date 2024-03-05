@@ -79,6 +79,8 @@
 
 ![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js) ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb)  ![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express) ![Heroku](https://img.shields.io/badge/-Heroku-05122A?style=flat&logo=heroku) ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5) ![CSS3](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3) ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
 
+## :gear : Installation Instructions
+
 ## :link: Links
 
 <details open>
@@ -96,10 +98,7 @@ Welcome to Nomad Nest: a site created to assist digital nomads. Pick a location 
 - As a non-technical HR manager, I want to quickly see the skills and experience of a candidate, so that I can evaluate whether the candidate meets the requirements for an open position at my company.
 - As a mid-level engineer, I want to view a junior developer's project and read their code, so that I can evaluate their coding skills.
 
-
-<!-- ## :triangular_flag_on_post: Unsolved Problems & Hurdles
-
--  -->
+## :triangular_flag_on_post: Hurdles
 
 ## :dart: Next Steps
 
