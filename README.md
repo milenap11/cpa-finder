@@ -90,10 +90,6 @@
 <a href="https://cpa-finder-390658509291.herokuapp.com/">CPA Finder</a>
 </details>
 
-## :rocket: Walkthrough
-
-Welcome to Nomad Nest: a site created to assist digital nomads. Pick a location and we'll help you getting settled in your new home away from home. We'll provide and book recommended stays, assist with visa requirements, offer information about transportation, co-working spaces and more. Explore our list of destinations and find reviews posted by digital nomads. Are you ready to buckle up?
-
 ## :pencil: User Stories
 
 - As someone who is need of a new CPA for advice or submit their taxes, I want to easily find one in my area, instead of relying on word of mouth.
