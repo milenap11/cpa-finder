@@ -26,53 +26,50 @@
 <details open>
 <summary>Wireframe-Home</summary>
 
-![Home](public/assets/screenshots/home.png)
+![Home Page](https://github.com/milenap11/cpa-finder/assets/152201737/570b9b6c-95b8-480c-950a-40e342b1e47e)
+
 </details>
 
 <details open>
 <summary>Wireframe-Details</summary>
+  
+![Details Page](https://github.com/milenap11/cpa-finder/assets/152201737/c09d259a-e9cb-44c2-91d2-645239a433ff)
 
-![Details](public/assets/screenshots/details.png)
 </details>
 
 <details open>
 <summary>Home</summary>
+  
+![Screenshot 2024-03-05 at 4 14 23 PM](https://github.com/milenap11/cpa-finder/assets/152201737/c69649af-2c28-496a-ac76-c14a73452b9a)
 
-![Home](public/assets/screenshots/home-web.png)
 </details>
 
 <details open>
-<summary>Index</summary>
+<summary>Details</summary>
 
-![Destination-index](public/assets/screenshots/index.png)
-</details>
+![Screenshot 2024-03-05 at 4 16 01 PM](https://github.com/milenap11/cpa-finder/assets/152201737/a59d5817-5c3a-4054-b316-2fe88e119c65)
 
-<details open>
-<summary>Show</summary>
-
-![Destination-show](public/assets/screenshots/show.png)
 </details>
 
 <details open>
 <summary>New & Create</summary>
 
-![New Destination](public/assets/screenshots/new.png)
+![Screenshot 2024-03-05 at 4 17 38 PM](https://github.com/milenap11/cpa-finder/assets/152201737/a8ae9333-321c-4ea2-9fa9-d951aa95cee9)
+
 </details>
 
 <details open>
 <summary>Edit & Update</summary>
 
-![Edit Destination](public/assets/screenshots/edit.png)
+![Screenshot 2024-03-05 at 4 18 46 PM](https://github.com/milenap11/cpa-finder/assets/152201737/13d3d03f-c1cd-4195-8c0b-d3362aff8e54)
+
 </details>
 
 <details open>
-<summary>Second Schema - Reviews</summary>
+<summary>Sign Up & Log In</summary>
 
-![Create a Review](public/assets/screenshots/new-review.png)
+![Screenshot 2024-03-05 at 4 19 53 PM](https://github.com/milenap11/cpa-finder/assets/152201737/bfd171de-608a-468d-9d84-4e4211f38349)
 
-![Create a Review](public/assets/screenshots/index-review.png)
-
-![Create a Review](public/assets/screenshots/show-review.png)
 </details>
 
 ## :robot: Technologies Used
