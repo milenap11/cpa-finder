@@ -1,6 +1,9 @@
 <div id="description" align="center">
 <img width="207" alt="Logo" src="https://github.com/milenap11/cpa-finder/assets/152201737/7271a809-a49b-48a8-8a45-5a3d674b2fe6"></div>
 
+<details open>
+<summary>Route Table & ERD</summary>
+  
 | URI | REST Route | HTTP Method | CRUD Action | 
 |-----|------------|-------------|-------------|
 | / | | GET | read | 
@@ -20,6 +23,8 @@
 |  | Content | CharField | 
 |  | Title | CharField | 
 | FK | cpa_id | ForeignKey | 
+
+</details>
 
 ## :art: Screenshots
 
@@ -91,6 +96,7 @@ Welcome to Nomad Nest: a site created to assist digital nomads. Pick a location 
 
 ## :pencil: User Stories
 
+- As someone who is need of a new CPA for advice or submit their taxes, I want to easily find one in my area, instead of relying on word of mouth.
 - As someone just met at a networking event, I want to quickly see the developer's skills, so that I can recommend the person to my company or someone who I know. 
 - As a non-technical HR manager, I want to quickly see the skills and experience of a candidate, so that I can evaluate whether the candidate meets the requirements for an open position at my company.
 - As a mid-level engineer, I want to view a junior developer's project and read their code, so that I can evaluate their coding skills.
