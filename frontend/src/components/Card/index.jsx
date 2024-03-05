@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import './styles.css'
 import { useState, useEffect } from "react";
 import { getComments } from "../../../utils/backend"
+import starIcon from '../../assets/star-fill.svg'
 
 export default function Card({ cpa, updateDetails }) {
     
@@ -23,7 +24,8 @@ export default function Card({ cpa, updateDetails }) {
                 <p className="mt-1 font-light">{cpa.properties.suburb}</p>
                 <p className="font-light">{cpa.properties.state}</p>
                 <br />
-                <p>{comments.length} reviews</p>
+                <div className="flex lg:gap-3 md:gap-3 sm:gap-3 gap-2"><img src={starIcon} />
+                <p>{comments.length} reviews</p></div>
                 
                
             </figcaption>
