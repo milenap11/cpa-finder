@@ -38,7 +38,7 @@ export default function Comment({ data, refreshComments }) {
         return (
             <form
                 onSubmit={handleSubmit}
-                className="bg-gray-100 rounded-lg p-4 my-4 border-gray-700 border-2 w-[80vw] mx-auto text-right">
+                className="bg-gray-100 rounded-md p-4 my-4 border border-gray-300 w-[80vw] mx-auto text-right">
                 <input
                     name="name"
                     className="px-2 py-1 w-full bg-gray-100"
@@ -73,8 +73,8 @@ export default function Comment({ data, refreshComments }) {
     } else {
         return (
             <div
-                className="bg-gray-100 rounded-lg p-4 my-4 border-gray-700 border-2 w-[80vw] mx-auto">
-                <p className="font-bold">{data.name}</p>
+                className="bg-gray-100 rounded-md p-4 my-4 border border-gray-300 w-[80vw] mx-auto">
+                <p className="font-semibold">{data.name}</p>
                 <p className="my-2">{data.content}</p>
                 <div className="flex justify-end">
                     <button

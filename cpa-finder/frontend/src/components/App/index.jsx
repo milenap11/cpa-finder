@@ -7,6 +7,7 @@ import DetailsPage from "../DetailsPage";
 import NotFoundPage from "../NotFoundPage";
 import HomePage from "../HomePage";
 import AuthFormPage from '../AuthFormPage'
+import logo from '../../assets/logo.png'
 
 
 export default function App() {
@@ -39,16 +40,16 @@ export default function App() {
   
   let authLink = <div className="flex lg:gap-5 md:gap-4 sm:gap-3 gap-2">
     <Link to="/auth/signup">
-      <h2 className="md:text-lg sm:text-md font-semibold">Sign Up</h2>
+      <h2 className="md:text-lg sm:text-md font-medium">Sign Up</h2>
     </Link>
     <p>|</p>
     <Link to="/auth/login">
-      <h2 className="md:text-lg sm:text-md font-semibold">Log In</h2>
+      <h2 className="md:text-lg sm:text-md font-medium">Log In</h2>
     </Link>
   </div>
 
   if (loginStatus) {
-        authLink = <button className="md:text-lg sm:text-md" 
+        authLink = <button className="md:text-lg sm:text-md font-medium" 
         onClick={() => {
           localStorage.clear() 
           setLoginStatus(false)
@@ -59,11 +60,9 @@ export default function App() {
 
   return (
     <>
-      <nav className="bg-[#d6e5f3] mx-[10%] flex items-center justify-between h-16">
+      <nav className="bg-[#d6e5f3] mx-[10%] flex items-center justify-between h-20">
         <Link to="/">
-          <h1 className="font-bold md:text-3xl sm:text-2xl">
-            CPA Finder
-          </h1>
+          <img src={logo} width="200px"></img>
         </Link>
         {authLink}
       </nav>

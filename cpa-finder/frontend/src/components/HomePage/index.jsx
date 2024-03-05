@@ -33,15 +33,11 @@ export default function HomePage({ cpas, refreshQueue, updateDetails }) {
     if (cpas.length > 0) {
     return (
         <>
-        <div className="bg-[#d6e5f3] mt-24">
-            <h1 className="text-center md:text-4xl text-3xl">Find a CPA near you</h1>
-            <h1 className="text-center md:text-lg sm:text-md mt-4 font-light">Find, compare and book with highly-rated CPAs</h1>
-            <br />
-            {/* <h3 className="text-center text-lg font-bold">Browse CPAs below!</h3> */}
-
-
+        <div className="bg-[#d6e5f3] my-24">
+            <h1 className="text-center md:text-4xl text-3xl font-medium">Find a CPA near you</h1>
+            <h1 className="text-center md:text-lg sm:text-md mt-2 font-normal">Find, compare and book with highly-rated CPAs</h1>
             <div>
-    <form onSubmit={handleSubmit} className="mt-4 text-center">
+    <form onSubmit={handleSubmit} className="mt-8 text-center">
             <input
             className="box-border p-2 w-3/5 rounded-md border border-gray-300 focus:outline-none focus:border-gray-500"
             name="postcode"
@@ -53,14 +49,14 @@ export default function HomePage({ cpas, refreshQueue, updateDetails }) {
             onChange={event => setQuery(event.target.value)}  />
         <button
             type="submit"
-            className="box-border mx-1 px-3 py-[6px] text-lg border-2 border-gray-700 rounded-lg font-semibold hover:bg-gray-700 hover:opacity-70 transition-all duration-200 ease-in-out">
+            className="bg-[#fff04b] box-border mx-1 px-3 py-[6px] text-lg rounded-md font-medium hover:bg-[#F2E447] transition-all duration-200 ease-in-out">
             Search
         </button>
     </form>
-            <p className="mt-20 mb-4 mx-[10%]">{cpas.length} results</p>
             </div>
         </div>
         <div className="bg-[#ffffff]">
+        <p className="font-light pt-4 mx-[10%]">{cpas.length} results</p>
             <Gallery 
             cpas={cpas}
             refreshQueue={refreshQueue}
@@ -73,14 +69,12 @@ export default function HomePage({ cpas, refreshQueue, updateDetails }) {
     } else {
         return (
         <>
-            <h1 className="mt-5 text-center md:text-3xl text-2xl font-bold">Find a CPAs near you</h1>
-            <h2 className="text-center md:text-xl text-lg mt-4">Find, compare and book with highly-rated CPAs</h2>
-            <br />
-
-
-            <div className="pb-10">
-    <form onSubmit={handleSubmit} className="mt-4 text-center">
-        <input
+            <div className="bg-[#d6e5f3] my-24">
+            <h1 className="text-center md:text-4xl text-3xl font-medium">Find a CPA near you</h1>
+            <h1 className="text-center md:text-lg sm:text-md mt-2 font-normal">Find, compare and book with highly-rated CPAs</h1>
+            <div>
+    <form onSubmit={handleSubmit} className="mt-8 text-center">
+            <input
             className="box-border p-2 w-3/5 rounded-md border border-gray-300 focus:outline-none focus:border-gray-500"
             name="postcode"
             placeholder="zipcode: 11201" 
@@ -91,14 +85,15 @@ export default function HomePage({ cpas, refreshQueue, updateDetails }) {
             onChange={event => setQuery(event.target.value)}  />
         <button
             type="submit"
-            className="box-border mx-1 px-3 py-[6px] text-lg border-2 border-gray-700 rounded-lg font-semibold hover:bg-gray-700 hover:opacity-70 transition-all duration-200 ease-in-out">
+            className="bg-[#fff04b] box-border mx-1 px-3 py-[6px] text-lg rounded-md font-medium hover:bg-[#F2E447] transition-all duration-200 ease-in-out">
             Search
         </button>
     </form>
             </div>
-
-            <p>No CPAs available in this area</p>
-        
+        </div>
+        <div className="min-h-[500px] bg-[#ffffff]">
+        <p className="font-light pt-4 mx-[10%]">{cpas.length} results</p>
+        </div>
         </>
         )
     }
