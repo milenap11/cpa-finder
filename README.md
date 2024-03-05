@@ -85,7 +85,7 @@
 
 <details open>
 <summary>Deployed Link</summary>
-<a href="https://nomad-nest-3b3484e95287.herokuapp.com/">Nomad Nest</a>
+<a href="https://cpa-finder-390658509291.herokuapp.com/">CPA Finder</a>
 </details>
 
 ## :rocket: Walkthrough
