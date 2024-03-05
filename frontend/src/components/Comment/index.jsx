@@ -73,7 +73,7 @@ export default function Comment({ data, refreshComments }) {
     } else {
         return (
             <div
-                className=" bg-[#f5f0e2] rounded-md p-4 my-4 w-[80vw] mx-auto">
+                className=" bg-[#ffffff] rounded-md p-4 my-4 w-[80vw] mx-auto">
                 <p className="font-semibold">{data.name}</p>
                 <p className="my-2">{data.content}</p>
                 <div className="flex justify-end">

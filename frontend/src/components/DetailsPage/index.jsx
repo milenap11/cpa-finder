@@ -28,7 +28,7 @@ useEffect(() => {
 if (cpa) {
     return (
         <>
-        <div className="bg-[#fdfaee] min-h-[1000px] py-16">
+        <div className="bg-[#ffffff] py-24">
         <div className="rounded-md mx-[10%]">
             
             <h1 className="text-2xl font-medium" >{cpa.properties.name}</h1>
@@ -39,6 +39,8 @@ if (cpa) {
             <div className="flex lg:gap-5 md:gap-4 sm:gap-3 gap-2 mt-4"><img src={clockIcon} />
             <p className="font-normal">{cpa.properties.opening_hours}</p></div>
         </div>
+        </div>
+        <div className="bg-[#fdfaee] pt-2 min-h-[600px]">
         <CommentSection cpaId={cpa.properties.name} />
         </div>
         </>
