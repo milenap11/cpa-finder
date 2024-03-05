@@ -73,7 +73,7 @@ export default function commentSection({ cpaId }) {
     }
 
     return (
-        <div className='comment-section mx-[10%] mt-16 relative '>
+        <div className='comment-section mx-[10%] relative '>
             <h1 className='text-xl font-medium'>Customer reviews</h1>
             <button
                 onClick={toggleCreateForm}
@@ -86,7 +86,7 @@ export default function commentSection({ cpaId }) {
             {
                 showCreateForm && <form
                     onSubmit={handleSubmit}
-                    className="bg-gray-100 rounded-md p-4 my-4 border w-[80vw] mx-auto text-right">
+                    className="bg-gray-100 rounded-md p-4 my-4  w-[80vw] mx-auto text-right">
                     <input
                         name="name"
                         className="px-2 py-1 w-full bg-gray-100"

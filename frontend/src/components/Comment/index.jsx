@@ -38,7 +38,7 @@ export default function Comment({ data, refreshComments }) {
         return (
             <form
                 onSubmit={handleSubmit}
-                className="bg-gray-100 rounded-md p-4 my-4 border w-[80vw] mx-auto text-right">
+                className="bg-gray-100 rounded-md p-4 my-4 w-[80vw] mx-auto text-right">
                 <input
                     name="name"
                     className="px-2 py-1 w-full bg-gray-100"

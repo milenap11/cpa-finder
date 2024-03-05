@@ -40,7 +40,7 @@ if (cpa) {
             <p className="font-normal">{cpa.properties.opening_hours}</p></div>
         </div>
         </div>
-        <div className="bg-[#fdfaee] pt-2 min-h-[600px]">
+        <div className="bg-[#fdfaee] pt-8 min-h-[600px]">
         <CommentSection cpaId={cpa.properties.name} />
         </div>
         </>

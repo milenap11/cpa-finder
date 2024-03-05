@@ -24,7 +24,7 @@ export default function Card({ cpa, updateDetails }) {
                 <p className="mt-1 font-light">{cpa.properties.suburb}</p>
                 <p className="font-light">{cpa.properties.state}</p>
                 <br />
-                <div className="flex lg:gap-3 md:gap-3 sm:gap-3 gap-2"><img src={starIcon} />
+                <div className="flex lg:gap-2 md:gap-2 sm:gap-2 gap-2"><img src={starIcon} />
                 <p>{comments.length} reviews</p></div>
                 
                
