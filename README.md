@@ -74,7 +74,7 @@
 
 ## :robot: Technologies Used
 
-![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js) ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb)  ![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express) ![Heroku](https://img.shields.io/badge/-Heroku-05122A?style=flat&logo=heroku) ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5) ![CSS3](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3) ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
+![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb)  ![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express) ![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react) ![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js) ![Heroku](https://img.shields.io/badge/-Heroku-05122A?style=flat&logo=heroku) ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5) ![CSS3](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3) ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
 
 ## :gear: Installation Instructions
 
