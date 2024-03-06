@@ -166,4 +166,5 @@ warn - https://tailwindcss.com/docs/content-configuration
 
 - [ ] Hide Edit and Delete buttons to guest users
 - [ ] Add review rating instead of number of reviews
+- [ ] Add hamburger menu on small screen size
 - [ ] Allow users to "Favorite" CPAs, and view a list of all their favorited CPAs
