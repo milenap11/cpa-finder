@@ -23,6 +23,13 @@
 |  | Content | CharField | 
 | FK | cpa_id | ForeignKey | 
 
+
+| Key | Name | Type | 
+|-----|------------|--------------|
+| PK | id | AutoField | 
+|  | Email | CharField | 
+|  | Password | CharField |  
+
 </details>
 
 ## :art: Screenshots
@@ -84,17 +91,17 @@
 
 <details open>
 <summary>Instructions</summary>
-1. Start by creating a new Vite project:
+<p>1. Start by creating a new Vite project:</p>
 <pre>
 npm create vite@latest my-project -- --template react
 cd my-project
 </pre>
-2.	Install Tailwind CSS:
+<p>2.	Install Tailwind CSS:</p>
 <pre>
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 </pre>
-3. Configure your template paths in your tailwind.config.js:
+<p>3. Configure your template paths in your tailwind.config.js:</p>
 <pre>
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -108,7 +115,7 @@ export default {
   plugins: [],
 }
 </pre>
-4. Add the Tailwind directives to your CSS:
+<p>4. Add the Tailwind directives to your CSS:</p>
 <pre>
 @tailwind base;
 @tailwind components;
@@ -117,11 +124,11 @@ export default {
 <p>5. Remove all the unnecessary files (SVGs & README) and create a components folder inside src.</p>
 <p>6. Move App.jsx into the src/components/App folder and rename App.jsx to index.jsx.</p>
 <p>7. Move App.css into the src/components/App folder and rename App.css to styles.css.</p>
-8. Launch your server: 
+<p>8. Launch your server:</p> 
 <pre>
 npm run dev
 </pre>
-9. You should see this output in your terminal:
+<p>9. You should see this output in your terminal:</p>
 <pre>
 VITE v5.1.1  ready in 558 ms
 
@@ -132,7 +139,7 @@ VITE v5.1.1  ready in 558 ms
 warn - No utility classes were detected in your source files. If this is unexpected, double-check the `content` option in your Tailwind CSS configuration.
 warn - https://tailwindcss.com/docs/content-configuration
 </pre>
-10. Your React app is ready to be connected to the API!
+<p>10. Your React app is ready to be connected to the API!</p>
 </details>
 
 ## :link: Links
@@ -151,8 +158,11 @@ warn - https://tailwindcss.com/docs/content-configuration
 
 ## :triangular_flag_on_post: Hurdles
 
+- Render multiple CPAs
+- Display the details for each CPA
+- Filter the gallery results by searching a second zipcode API
+
 ## :dart: Next Steps
 
-- [ ] Add logo
-- [ ] Improve the look of reviews
-- [ ] Add more features
+- [ ] Hide Edit and Delete buttons to guest users
+- [ ] Allow users to "Favorite" CPAs, and view a list of all their favorited CPAs
