@@ -83,6 +83,39 @@
 
 ## :gear: Installation Instructions
 
+<details>
+  <summary>Installation</summary>
+  <p>1.	Download PostgreSQL from https://postgresapp.com/downloads.html</p>
+  <p>2.	Choose your OS and download, then move the newly downloaded application to the Applications folder.</p>
+  <p>3.	Click “Initialize” to create a new server.</p>
+  <p>4.	To start the server, click “start”.</p>
+  <p>5.	Open your terminal and type: createdb <your desired database name></p>
+  <p>6.	Type: psql</p>
+  <p>7.	Type: \c <your newly created database name></p>
+  <p>8.	Create the employee table:
+  <pre>
+    CREATE TABLE main_app_employee (
+    Id SERIAL PRIMARY KEY
+    employee_name VARCHAR(100),
+    Department VARCHAR(100),
+    Position VARCHAR(100),
+    Salary DECIMAL(9, 2),
+    Birthdate DATE,
+    manager_id INTEGER,
+    user_id SET DEFAULT NULL,
+    employee_email VARCHAR(255)
+    );
+  </pre>
+  <p>9.	Type: \copy main_app_employee FROM ‘/<path to your CSV file>/<your CSV file name>.csv’ WITH (FORMAT csv);</p>
+  <p>10.	Go to neon.tech and make a new account. Alternatively, you may log in with an existing Google or GitHub account.</p>
+  <p>11.	Once logged in, ensure that you stay logged in as long as you will use this database.</p>
+  <p>12.	Open your terminal and input: psql -h pg.neon.tech</p>
+  <p>13.	On your browser, go to https://heythere-hr-f3d27d8a0e61.herokuapp.com/</p>
+  <p>14.	If you are a CEO or a president of the company, ask to the site administrator to make a superuser/admin account on your behalf.</p>
+  <p>15.	If you are a manager of a department or a regular employee, you should be able to create an account using your email address.</p>
+  <p>16.	You should now be able to see the imported database under the “employees” tab. If you are a superuser, you will be able to add, edit, or delete any employee, event, or PTO request. If you are a manager, you will be able to add, edit, or delete any employee who is under your supervision in your department. You will be able to edit your own information, but you will not be able to delete yourself. If you are a regular employee, you will be able to edit your own information only. As a manager or an employee, you may choose to attend any event that the employer creates on this page. You may also cancel your attendance at any time. As an employee, you may request time off by clicking “Add PTO Request” button. Once submitted, it will be automatically visible on the PTO Requests section of the website, with a “pending” status. Only the superuser/employer will be able to approve, deny, or delete this request.</p>
+</details>
+
 ## :link: Links
 
 <details open>
