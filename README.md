@@ -165,5 +165,5 @@ warn - https://tailwindcss.com/docs/content-configuration
 ## :dart: Next Steps
 
 - [ ] Hide Edit and Delete buttons to guest users
-- [ ] Add review rating instead on number of reviews
+- [ ] Add review rating instead of number of reviews
 - [ ] Allow users to "Favorite" CPAs, and view a list of all their favorited CPAs
