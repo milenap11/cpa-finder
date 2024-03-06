@@ -114,9 +114,9 @@ export default {
 @tailwind components;
 @tailwind utilities;
 </pre>
-5. Remove all the unnecessary files (SVGs & README) and create a components folder inside src.
-6. Move App.jsx into the src/components/App folder and rename App.jsx to index.jsx.
-7. Move App.css into the src/components/App folder and rename App.css to styles.css.
+<p>5. Remove all the unnecessary files (SVGs & README) and create a components folder inside src.</p>
+<p>6. Move App.jsx into the src/components/App folder and rename App.jsx to index.jsx.</p>
+<p>7. Move App.css into the src/components/App folder and rename App.css to styles.css.</p>
 8. Launch your server: 
 <pre>
 npm run dev
@@ -132,7 +132,7 @@ VITE v5.1.1  ready in 558 ms
 warn - No utility classes were detected in your source files. If this is unexpected, double-check the `content` option in your Tailwind CSS configuration.
 warn - https://tailwindcss.com/docs/content-configuration
 </pre>
-9. Your React app is ready to be connected to the API!
+10. Your React app is ready to be connected to the API!
 </details>
 
 ## :link: Links
