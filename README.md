@@ -21,7 +21,6 @@
 | PK | id | AutoField | 
 |  | Name | CharField | 
 |  | Content | CharField | 
-|  | Title | CharField | 
 | FK | cpa_id | ForeignKey | 
 
 </details>
@@ -85,27 +84,18 @@
 
 <details>
   <summary>Installation</summary>
-  <p>1.	Download PostgreSQL from https://postgresapp.com/downloads.html</p>
-  <p>2.	Choose your OS and download, then move the newly downloaded application to the Applications folder.</p>
-  <p>3.	Click “Initialize” to create a new server.</p>
+1.	Create your project
+<pre>
+npm create vite@latest my-project -- --template react
+cd my-project
+</pre>
+  2.	Connect to a 3rd-party API
+  3.	Store our API date in state
   <p>4.	To start the server, click “start”.</p>
   <p>5.	Open your terminal and type: createdb <your desired database name></p>
   <p>6.	Type: psql</p>
   <p>7.	Type: \c <your newly created database name></p>
   <p>8.	Create the employee table:
-  <pre>
-    CREATE TABLE main_app_employee (
-    Id SERIAL PRIMARY KEY
-    employee_name VARCHAR(100),
-    Department VARCHAR(100),
-    Position VARCHAR(100),
-    Salary DECIMAL(9, 2),
-    Birthdate DATE,
-    manager_id INTEGER,
-    user_id SET DEFAULT NULL,
-    employee_email VARCHAR(255)
-    );
-  </pre>
   <p>9.	Type: \copy main_app_employee FROM ‘/<path to your CSV file>/<your CSV file name>.csv’ WITH (FORMAT csv);</p>
   <p>10.	Go to neon.tech and make a new account. Alternatively, you may log in with an existing Google or GitHub account.</p>
   <p>11.	Once logged in, ensure that you stay logged in as long as you will use this database.</p>
