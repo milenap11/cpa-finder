@@ -80,30 +80,59 @@
 
 ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb)  ![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express) ![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react) ![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js) ![Heroku](https://img.shields.io/badge/-Heroku-05122A?style=flat&logo=heroku) ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5) ![CSS3](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3) ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
 
-## :gear: Installation Instructions
+## :gear: Installation
 
-<details>
-  <summary>Installation</summary>
-1.	Create your project
+<details open>
+<summary>Instructions</summary>
+1. Start by creating a new Vite project:
 <pre>
 npm create vite@latest my-project -- --template react
 cd my-project
 </pre>
-  2.	Connect to a 3rd-party API
-  3.	Store our API date in state
-  <p>4.	To start the server, click “start”.</p>
-  <p>5.	Open your terminal and type: createdb <your desired database name></p>
-  <p>6.	Type: psql</p>
-  <p>7.	Type: \c <your newly created database name></p>
-  <p>8.	Create the employee table:
-  <p>9.	Type: \copy main_app_employee FROM ‘/<path to your CSV file>/<your CSV file name>.csv’ WITH (FORMAT csv);</p>
-  <p>10.	Go to neon.tech and make a new account. Alternatively, you may log in with an existing Google or GitHub account.</p>
-  <p>11.	Once logged in, ensure that you stay logged in as long as you will use this database.</p>
-  <p>12.	Open your terminal and input: psql -h pg.neon.tech</p>
-  <p>13.	On your browser, go to https://heythere-hr-f3d27d8a0e61.herokuapp.com/</p>
-  <p>14.	If you are a CEO or a president of the company, ask to the site administrator to make a superuser/admin account on your behalf.</p>
-  <p>15.	If you are a manager of a department or a regular employee, you should be able to create an account using your email address.</p>
-  <p>16.	You should now be able to see the imported database under the “employees” tab. If you are a superuser, you will be able to add, edit, or delete any employee, event, or PTO request. If you are a manager, you will be able to add, edit, or delete any employee who is under your supervision in your department. You will be able to edit your own information, but you will not be able to delete yourself. If you are a regular employee, you will be able to edit your own information only. As a manager or an employee, you may choose to attend any event that the employer creates on this page. You may also cancel your attendance at any time. As an employee, you may request time off by clicking “Add PTO Request” button. Once submitted, it will be automatically visible on the PTO Requests section of the website, with a “pending” status. Only the superuser/employer will be able to approve, deny, or delete this request.</p>
+2.	Install Tailwind CSS:
+<pre>
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+</pre>
+3. Configure your template paths in your tailwind.config.js:
+<pre>
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+</pre>
+4. Add the Tailwind directives to your CSS:
+<pre>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</pre>
+5. Remove all the unnecessary files (SVGs & README) and create a components folder inside src.
+6. Move App.jsx into the src/components/App folder and rename App.jsx to index.jsx.
+7. Move App.css into the src/components/App folder and rename App.css to styles.css.
+8. Launch your server: 
+<pre>
+npm run dev
+</pre>
+9. You should see this output in your terminal:
+<pre>
+VITE v5.1.1  ready in 558 ms
+
+➜  Local:   http://localhost:5173/
+➜  Network: use --host to expose
+➜  press h + enter to show help
+
+warn - No utility classes were detected in your source files. If this is unexpected, double-check the `content` option in your Tailwind CSS configuration.
+warn - https://tailwindcss.com/docs/content-configuration
+</pre>
+9. Your React app is ready to be connected to the API!
 </details>
 
 ## :link: Links
