@@ -152,9 +152,6 @@ warn - https://tailwindcss.com/docs/content-configuration
 ## :pencil: User Stories
 
 - As someone who is in need of a new CPA for advice or submit their taxes, I want to easily find one in my area, instead of relying on word of mouth.
-- As someone just met at a networking event, I want to quickly see the developer's skills, so that I can recommend the person to my company or someone who I know. 
-- As a non-technical HR manager, I want to quickly see the skills and experience of a candidate, so that I can evaluate whether the candidate meets the requirements for an open position at my company.
-- As a mid-level engineer, I want to view a junior developer's project and read their code, so that I can evaluate their coding skills.
 
 ## :triangular_flag_on_post: Hurdles
 
